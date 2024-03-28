@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //initializing the viewmodel class
         viewModel = ViewModelProvider(this)[AuthViewModel::class.java]
 
         binding.loginBtn.setOnClickListener {
